@@ -1,0 +1,1 @@
+docker-compose exec postgres pgloader t1.load > ./logs/log_$(date +%Y-%m-%d-%H-%M-%S).log

@@ -1,12 +1,10 @@
-# mysql2pgsql-docker
-MySQL to PostgreSQL with pgloader and Docker
+# POC utilizando o pgloader
+Migrando dados do MYSQL para o POSTGRESQL
 
 **Setup**
 
-1. Clone Repository or Download
+1. Executar `docker-compose up -d`
 
-2. Place your MySQL dump inside migrations folder and remove sample one
+2. Para executar a migração da base todas :  `./pgloader_migrate.sh`
 
-3. Run `docker-compose up -d`
-
-4. When containes are online run `./pgloader_migrate.sh`
+3. Para executar a migração de algumas tabelas, segundo o arquivos de configuração :  `bash table.sh`
